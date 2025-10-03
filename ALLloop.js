@@ -9,12 +9,15 @@ const students = {
 
 
 let allSAS=[];
+let alltotal = [];
 
 for (const i in students) {
   let total = 0;
   for(const j of students[i]) {
     total += j;
   }
+alltotal.push(total);
+
   let average = total / students[i].length;
   allSAS.push(average);
   console.log(`${i} -> Average: ${average.toFixed(2)}`);
@@ -52,4 +55,10 @@ for (i in students) {
   console.log(`Score : ${students[i]}`);
   console.log(`\n`);
 
+}
+
+console.log(`\n`);
+
+for(const i in allSAS){
+  console.log(`Top `)
 }
