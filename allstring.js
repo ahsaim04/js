@@ -101,3 +101,18 @@ console.log(`index of @: ${index}`);
 
 
 // bio formatting
+  let bio2 = bio.replace("javascript", "JavaScript ❤️");
+
+  let bio3 = bio2.charAt(0).toUpperCase() + bio2.slice(1);
+
+  console.log(`Bio: ${bio3}`);
+
+
+// hobby formatting
+let hobby2 = hobby.split(",");
+
+let hobby3 = hobby2.join(" | ");    
+console.log(`Hobbies: ${hobby3}`);
+let hasCricket = hobby2.includes("Cricket");
+console.log(`Has Cricket: ${hasCricket}`);
+
