@@ -89,3 +89,26 @@ for( const score of scores){
 
 console.log("Highest: ", max);
 console.log("Lowest: ", min);
+
+let bonus = scores.map(score =>
+{
+    const randomBonus = Math.floor(Math.random() * 5) + 1;
+    return Math.round(score + randomBonus);
+}
+)
+console.log("before Bonus: ", scores);  
+console.log("After Bonus: ", bonus);
+
+
+console.log("Square Root of Lowest: ", Math.sqrt(min).toFixed(2));
+console.log("Cube of Highest: ", Math.pow(max, 3).toFixed(2));
+
+
+let difference = Math.abs(max - min);
+console.log("Difference: ", difference.toFixed(2));
+
+let averageString = average.toFixed(2).toString();
+console.log("Average as String: ", averageString);
+
+let averageNumber = Number(averageString);
+console.log("Average as Number: ", averageNumber);
